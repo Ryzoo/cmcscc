@@ -1,0 +1,173 @@
+$icomoon-font-path: "../fonts";
+
+$i-mp4: \e913;
+$i-pdf: \e914;
+$i-menu: \e911;
+$i-settings-2: \e912;
+$i-download: \e910;
+$i-form: \e901;
+$i-user: \e908;
+$i-share: \e909;
+$i-settings: \e90a;
+$i-search: \e90b;
+$i-plus: \e90c;
+$i-strategy: \e90d;
+$i-full-screen: \e907;
+$i-multi-users: \e90e;
+$i-empty-set: \e905;
+$i-moon: \e90f;
+$i-cross: \e904;
+$i-compose: \e903;
+$i-eye: \e906;
+$i-calendar: \e902;
+$i-bell: \e900;
+
+.i-lg {
+  font-size: 1.6em;
+}
+
+.i-md {
+  font-size: 1.2em;
+}
+
+.i-sm {
+  font-size: .88em;
+}
+
+@font-face {
+  font-family: 'conspect';
+  src:  url('#{$icomoon-font-path}/conspect.eot?maf7og');
+  src:  url('#{$icomoon-font-path}/conspect.eot?maf7og#iefix') format('embedded-opentype'),
+  url('#{$icomoon-font-path}/conspect.ttf?maf7og') format('truetype'),
+  url('#{$icomoon-font-path}/conspect.woff?maf7og') format('woff'),
+  url('#{$icomoon-font-path}/conspect.svg?maf7og#conspect') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'conspect' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 1em;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@function unicode($str) {
+  @return unquote("\"") + $str + unquote("\"");
+}
+
+.i-mp4 {
+  &:before {
+    content: unicode($i-mp4);
+  }
+}
+.i-pdf {
+  &:before {
+    content: unicode($i-pdf);
+  }
+}
+.i-menu {
+  &:before {
+    content: unicode($i-menu);
+  }
+}
+.i-settings-2 {
+  &:before {
+    content: unicode($i-settings-2);
+  }
+}
+.i-download {
+  &:before {
+    content: unicode($i-download);
+  }
+}
+.i-form {
+  &:before {
+    content: unicode($i-form);
+  }
+}
+.i-user {
+  &:before {
+    content: unicode($i-user);
+  }
+}
+.i-share {
+  &:before {
+    content: unicode($i-share);
+  }
+}
+.i-settings {
+  &:before {
+    content: unicode($i-settings);
+  }
+}
+.i-search {
+  &:before {
+    content: unicode($i-search);
+  }
+}
+.i-plus {
+  &:before {
+    content: unicode($i-plus);
+  }
+}
+.i-strategy {
+  &:before {
+    content: unicode($i-strategy);
+  }
+}
+.i-full-screen {
+  &:before {
+    content: unicode($i-full-screen);
+    color: #6a6e7c;
+  }
+}
+.i-multi-users {
+  &:before {
+    content: unicode($i-multi-users);
+  }
+}
+.i-empty-set {
+  &:before {
+    content: unicode($i-empty-set);
+  }
+}
+.i-moon {
+  &:before {
+    content: unicode($i-moon);
+  }
+}
+.i-cross {
+  &:before {
+    content: unicode($i-cross);
+  }
+}
+.i-compose {
+  &:before {
+    content: unicode($i-compose);
+  }
+}
+.i-eye {
+  &:before {
+    content: unicode($i-eye);
+  }
+}
+.i-calendar {
+  &:before {
+    content: unicode($i-calendar);
+  }
+}
+.i-bell {
+  &:before {
+    content: unicode($i-bell);
+  }
+}

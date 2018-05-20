@@ -9,23 +9,24 @@
                     </div>
                     <div class="nav-logo"><router-link to="/">CMC css framework</router-link></div>
                     <ul class="left-nav-menu">
-                        <li><router-link to="/grid">Siatka</router-link></li>
+                        <li><router-link to="/siatka">Siatka</router-link></li>
                         <li><router-link to="/typografia">Typografia</router-link></li>
-                        <li><router-link to="/colors">Kolory</router-link></li>
+                        <li><router-link to="/kolory">Kolory</router-link></li>
+                        <li><router-link to="/ikony">Ikony</router-link></li>
                         <li>
                             <div class="nav-drop-header">Przykłady</div>
                             <ul>
                                 <li class="nav-drop-name">Poszczególne elementy</li>
-                                <li><a href="">Karty</a></li>
-                                <li><a href="">Nawigacja</a></li>
-                                <li><a href="">Formularze</a></li>
-                                <li><a href="">Tabele</a></li>
+                                <li><router-link to="/karty">Karty</router-link></li>
+                                <li><router-link to="/nawigacje">Nawigacja</router-link></li>
+                                <li><router-link to="/formularze">Formularze</router-link></li>
+                                <li><router-link to="/tabele">Tabele</router-link></li>
+                                <li><router-link to="/przyciski">Przyciski</router-link></li>
                             </ul>
                         </li>
                     </ul>
                     <ul class="right-nav-menu">
-                        <li><a href="">Funkcje dodatkowe</a></li>
-                        <li><a href="">Zmienne</a></li>
+                        <li><router-link to="/dodatki">Funkcje dodatkowe</router-link></li>
                     </ul>
                     <div class="right-burger">
                         <div class="burger-icon"></div>
@@ -40,17 +41,12 @@
         </main>
         <footer>
             <div class="row-12">
-                <div class="col-6 col-sm-12">
-                    <h1>Tutaj bardzo fajna lista</h1>
+                <div class="col-12 text-a-c">
+                    <h3>Jak zacząć?</h3>
+                    <p>To bardzo proste, wystarczy że podłączysz te biblioteki do swojego projektu, a na koniec dodasz nasz framework</p>
                     <ul>
-                        <li>Lista</li>
-                        <li>Bardzo</li>
-                        <li>Fajna</li>
-                    </ul>
-                    <ul class="inline-list">
-                        <li>Lista</li>
-                        <li>Bardzo</li>
-                        <li>Płaska</li>
+                        <li><a href="https://code.jquery.com/">jQuery</a></li>
+                        <li><a href="https://cdnjs.com/libraries/hammer.js/">Hammer.js</a></li>
                     </ul>
                 </div>
             </div>

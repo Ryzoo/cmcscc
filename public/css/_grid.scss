@@ -49,6 +49,9 @@
     position: relative;
     grid-column-end: span $i;
   }
+  .col-offset-#{$i}{
+    grid-column-start: $i+1;
+  }
   @each $res in sm, md, lg {
     .col-#{$res}-#{$i}{
       @if $res == sm {

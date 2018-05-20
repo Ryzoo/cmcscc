@@ -18,7 +18,16 @@
                 <li><b>jQuery</b> - do obsługi interaktywnych akcji.</li>
                 <li><b>Hammer.js</b> - aby umożliwić kilka funkcjonalności na urządzeniach moblinych</li>
             </ul>
-           </div>
+       </div>
+        <div class="col-6 col-sm-12">
+            <h3>Nauka</h3>
+            <hr/>
+            <p>W celu nauki oraz testów. Polecamy zakładkę <b>"Przykłady"</b>. Każdy stworzny przez nas element jest tam dokładnie opisany, a zamieszczone przykłady z kodem na pewno pomogą w implementacji.</p>
+            <p>Definicje nazw klas wraz z opisem wyglądają w poniższy sposób:</p>
+            <ul>
+                <li><code>nazwa-klasy</code> Tutaj jakiś opis danej klasy</li>
+            </ul>
+        </div>
     </div>
 </template>
 
