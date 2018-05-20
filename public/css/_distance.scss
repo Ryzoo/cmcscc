@@ -1,0 +1,26 @@
+
+@for $i from 1 through 10{
+  .p-l-#{$i}{ padding-left: $i * $basicPadding; }
+  .p-r-#{$i}{ padding-right: $i * $basicPadding; }
+  .p-t-#{$i}{ padding-top: $i * $basicPadding; }
+  .p-b-#{$i}{ padding-bottom: $i * $basicPadding; }
+  .p-x-#{$i}{ padding-left: $i * $basicPadding; padding-right: $i * $basicPadding;}
+  .p-y-#{$i}{ padding-top: $i * $basicPadding; padding-bottom: $i * $basicPadding;}
+  .p-#{$i}{ padding: $i * $basicPadding; }
+
+  .m-l-#{$i}{ margin-left: $i * $basicMargin; }
+  .m-r-#{$i}{ margin-right: $i * $basicMargin; }
+  .m-t-#{$i}{ margin-top: $i * $basicMargin; }
+  .m-b-#{$i}{ margin-bottom: $i * $basicMargin; }
+  .m-x-#{$i}{ margin-left: $i * $basicMargin; margin-right: $i * $basicMargin;}
+  .m-y-#{$i}{ margin-top: $i * $basicMargin; margin-bottom: $i * $basicMargin;}
+  .m-#{$i}{ margin: $i * $basicMargin; }
+}
+
+.m-l-a{ margin-left: auto; }
+.m-r-a{ margin-right: auto; }
+.m-t-a{ margin-top: auto; }
+.m-b-a{ margin-bottom: auto; }
+.m-x-a{ margin-left: auto; margin-right: auto;}
+.m-y-a{ margin-top: auto; margin-bottom: auto;}
+.m-a{ margin-bottom: auto }

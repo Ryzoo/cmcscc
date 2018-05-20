@@ -1,0 +1,271 @@
+
+form{
+  border: 1px solid map_get($colors,third);
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: $radiusBasic;
+}
+
+form label{
+  width: 100%;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.form-shadow{
+  box-shadow: 3px 3px 15px -3px map_get($colors,third-d);
+}
+
+.form-align-center{
+  justify-content: space-evenly;
+}
+
+.form-align-left{
+  justify-content: flex-start;
+}
+
+.form-align-right{
+  justify-content: flex-end;
+}
+
+form > *{
+  display: block;
+}
+
+input, textarea{
+  font-family: $fontName, sans-serif;
+  line-height: 2em;
+  padding: 2px 8px;
+  background: map_get($colors, third-l);
+  color: map_get($colors, second);
+  width: calc( 100% - 16px );
+  margin: 5px 0;
+  border: 1px solid transparent;
+  border-bottom: 1px solid map_get($colors, primary-l);
+  border-radius: $radiusBasic;
+  max-width: calc( 100% - 16px );
+}
+
+input[type="checkbox"],input[type="radio"]{
+  display: inline-block;
+  position: relative;
+  width: 23px;
+  height: 23px;
+  margin: 0 5px 0 0;
+  border: 1px solid transparent;
+  border-bottom: 1px solid map_get($colors, primary);
+  border-radius: $radiusBasic;
+  -webkit-appearance: button;
+  background: map_get($colors, third-l);
+}
+
+input[type="radio"]{
+  border-radius: 50%;
+}
+
+input[type="checkbox"]:checked:after ,input[type="radio"]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid map_get($colors, primary);
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
+
+input[type="checkbox"]:hover,input[type="radio"]:hover{
+  cursor: pointer;
+  border: 1px solid map_get($colors, primary);
+}
+
+.checkbox-label,.radio-label{
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.radio-label{
+  margin: 5px 0;
+}
+
+.checkbox-label:hover,.radio-label:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: map_get($colors,primary);
+}
+
+input:active, textarea:active, input:focus, textarea:focus{
+  border-bottom: 1px solid map_get($colors, primary-d);
+  transform: translateY(-2px);
+}
+
+button{
+  border: 1px solid map_get($colors, primary);
+  background: map_get($colors, primary);
+  color: map_get($colors, third-l);
+  padding: 5px 20px;
+  font-family: $fontName, sans-serif;
+  border-radius: $radiusBasic;
+  margin: 10px;
+}
+
+.button-sm{
+  line-height: .7em;
+  height: 21px;
+  font-size: 0.7em;
+}
+
+button:hover{
+  background: map_get($colors, primary-l);
+  cursor: pointer;
+}
+
+button:focus, button:active{
+  background: map_get($colors, primary-d);
+}
+
+.button-free-p{
+  color: map_get($colors, primary);
+  background: transparent;
+  border: none;
+}
+.button-free-p:hover{
+  background: map_get($colors, primary);
+  color: map_get($colors, third-l);
+}
+
+.button-free-p:focus, .button-free-p:active{
+  background: map_get($colors, primary-d);
+  color: map_get($colors, third-l);
+}
+
+.button-free-s{
+  color: map_get($colors, second);
+  background: transparent;
+  border: none;
+}
+.button-free-s:hover{
+  background: map_get($colors, second);
+  color: map_get($colors, third-l);
+}
+
+.button-free-s:focus, .button-free-s:active{
+  background: map_get($colors, second-d);
+  color: map_get($colors, third-l);
+}
+
+.button-free-l{
+  color: map_get($colors, third-l);
+  background: transparent;
+  border: none;
+}
+.button-free-l:hover{
+  background: map_get($colors, third);
+  color: map_get($colors, third-l);
+}
+
+.button-free-l:focus, .button-free-l:active{
+  background: map_get($colors, third-d);
+  color: map_get($colors, third-l);
+}
+
+.button-l{
+  color: map_get($colors, second);
+  background: map_get($colors, third-l);
+  border: none;
+}
+.button-l:hover{
+  background: map_get($colors, third);
+  color: map_get($colors, second);
+}
+
+.button-l:focus, .button-l:active{
+  background: map_get($colors, third-d);
+  color: map_get($colors, third-l);
+}
+
+.button-s{
+  color: map_get($colors, third-l);
+  background: map_get($colors, second);
+  border: none;
+}
+.button-s:hover{
+  background: map_get($colors, second-l);
+  color: map_get($colors, third-l);
+}
+
+.button-s:focus, .button-s:active{
+  background: map_get($colors, second-d);
+  color: map_get($colors, third-l);
+}
+
+.button-p{
+  color: map_get($colors, third-l);
+  background: map_get($colors, primary);
+  border: none;
+}
+.button-p:hover{
+  background: map_get($colors, primary-l);
+  color: map_get($colors, third-l);
+}
+
+.button-p:focus, .button-p:active{
+  background: map_get($colors, primary-d);
+  color: map_get($colors, third-l);
+}
+
+.button-outline-p{
+  color: map_get($colors, primary);
+  background: transparent;
+  border: 1px solid map_get($colors, primary);
+}
+.button-outline-p:hover{
+  background: map_get($colors, primary);
+  color: map_get($colors, third-l);
+}
+
+.button-outline-p:focus, .button-outline-p:active{
+  background: map_get($colors, primary-d);
+  color: map_get($colors, third-l);
+}
+
+.button-outline-s{
+  color: map_get($colors, second);
+  background: transparent;
+  border: 1px solid map_get($colors, second);
+}
+.button-outline-s:hover{
+  background: map_get($colors, second);
+  color: map_get($colors, third-l);
+}
+
+.button-outline-s:focus, .button-outline-s:active{
+  background: map_get($colors, second-d);
+  color: map_get($colors, third-l);
+}
+
+.button-outline-l{
+  color: map_get($colors, third-l);
+  background: transparent;
+  border: 1px solid map_get($colors, third-l);
+}
+.button-outline-l:hover{
+  background: map_get($colors, third);
+  color: map_get($colors, third-l);
+}
+
+.button-outline-l:focus, .button-outline-l:active{
+  background: map_get($colors, third-d);
+  color: map_get($colors, third-l);
+}
+

@@ -1,0 +1,13 @@
+{
+  "name": "CSS framework",
+  "short_name": "CMC CSS FRAMEWORK",
+  "description": "Framework for css",
+  "start_url": "/",
+  "background_color": "#545B6F",
+  "theme_color": "#6E53A8",
+  "icons": [{
+    "src": "icon-256.png",
+    "sizes": "256x256",
+    "type": "image/png"
+  }]
+}

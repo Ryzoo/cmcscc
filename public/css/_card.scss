@@ -1,0 +1,19 @@
+
+.card{
+  background: map_get($colors, third-l);
+  border-radius: $radiusBasic;
+  overflow: hidden;
+  box-shadow: 3px 3px 15px -3px map_get($colors,third-d);
+}
+
+.card .card-image{
+  width: 100%;
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+.card .card-body{
+  padding: 20px;
+}

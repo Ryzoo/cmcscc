@@ -1,0 +1,277 @@
+nav{
+  transition: none;
+  margin-bottom: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+nav .col{
+  background:  map_get($colors,second-d);
+}
+
+nav li, nav{
+  line-height: $headerHeight;
+}
+
+nav ul:first-child{
+  height: $headerHeight;
+}
+
+nav ul{
+  margin: 0;
+  display: inherit;
+  line-height: $headerHeight;
+  background: map_get($colors,second-d);
+}
+
+nav li{
+  display: block;
+  position: relative;
+  float: left;
+  a{
+    padding: 0 1em;
+    display: block;
+  }
+}
+
+nav .nav-drop-header {
+  padding: 0 1em 0 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav .nav-drop-header:after{
+  content: '';
+  border: solid map_get($colors,third);
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: .2em;
+  margin-left: .8em;
+  margin-bottom: 2px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transition: all .3s;
+}
+
+nav .nav-drop-header:hover{
+  background: map_get($colors,second);
+  color: map_get($colors,third);
+}
+
+nav .activedHeaderDropdown:after{
+  content: '';
+  border: solid map_get($colors,third);
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: .2em;
+  margin-left: .8em;
+  margin-bottom: 0;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+
+nav li::before{
+  content: "";
+  padding: 0;
+}
+
+nav li:not(.nav-logo) a{
+  line-height: $headerHeight;
+  color: map_get($colors,third);
+}
+
+nav .left-nav-menu{
+  @media(max-width: 991px){
+      position: absolute;
+      display: block;
+      width: 300px;
+      left: 0;
+      top: 65px;
+      transform: translateX(calc(-100% - 25px));
+      min-height: 100vh;
+     border-top: 1px solid #6e53a8;
+  }
+
+  li{
+    float: none;
+    display: block;
+  }
+}
+nav .right-nav-menu{
+  position: absolute;
+  right: 0;
+  @media(max-width: 991px){
+    position: absolute;
+    display: block;
+    width: 300px;
+    right: 0;
+    top: 65px;
+    transform: translateX(calc(100% + 25px));
+    min-height: 100vh;
+    border-top: 1px solid #6e53a8;
+  }
+
+  li{
+    float: none;
+    display: block;
+  }
+}
+
+nav .right-nav-menu ul{
+  left: 0;
+}
+
+nav .right-nav-menu.menu-right-show{
+  @media(max-width: 991px){
+    transform: translateX(calc(0% + 25px));
+  }
+}
+
+nav .left-nav-menu.menu-left-show{
+  @media(max-width: 991px){
+    transform: translateX(calc(0% - 25px));
+  }
+}
+
+nav li:not(.nav-logo) a:hover{
+  background: map_get($colors,second);
+  color: map_get($colors,third);
+}
+nav .nav-logo{
+  margin-right: 1em;
+}
+nav .nav-logo a{
+  color: map_get($colors,third-l);
+  font-size: 1.3em;
+}
+
+nav li ul{
+  position: absolute;
+  background: map_get($colors,second);
+  width: max-content;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%,-100%);
+  transition: transform .2s ease;
+  @media(max-width: 991px){
+    position: relative;
+    transform: none;
+    width: 100%;
+    left: 0;
+    display: none;
+  }
+}
+
+nav li ul li{
+  float: none;
+}
+
+nav ul li:not(.nav-logo) ul li a:hover{
+  background: map_get($colors,primary);
+}
+
+nav li.nav-drop-name {
+  text-align: center;
+  padding: 0 3em;
+  font-size: 1.1em;
+  position: relative;
+}
+
+nav li.nav-drop-name:after{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  content: '';
+  width: 80%;
+  margin: auto;
+  border-top: 1px solid map_get($colors,second-l);
+}
+
+nav .activedHeaderDropdown{
+  background: map_get($colors,second);
+  color: map_get($colors,third);
+}
+
+nav li .activedDropdown{
+  transform: translate(-50%,0);
+  @media(max-width: 991px){
+    transform: none;
+    display: block;
+  }
+}
+
+// Burger
+// Configure your burger
+$size:   2em;
+$weight: 3px;
+$gutter: 6px;
+$color:  #FFF;
+$hover:  #FFF;
+$open-bg:#FFF;
+$radius: 0px;
+$text:   16px;
+
+.burger, .right-burger {
+  padding: .6em 0;
+  cursor: pointer;
+  width: $size;
+  margin-right: 2em;
+}
+
+.right-burger{
+  position: absolute;
+  right: 0;
+  margin-left: 2em;
+  margin-right: 0;
+}
+
+.burger:hover,.right-burger:hover {
+  transform: scale(1.1);
+}
+
+.burger-icon {
+  border-radius: $radius;
+  width:         $size;
+  height:        $weight;
+  background:    $color;
+  display: block;
+  position: relative;
+  transition: 0.4s all ease;
+  &:before, &:after {
+    border-radius: $radius;
+    content: "";
+    position: relative;
+    display: block;
+    width: $size;
+    height: $weight;
+    transition: 0.4s all ease;
+  }
+  &:before {
+    top: (($weight * 1) + $gutter) * -1;
+    background: $color;
+  }
+  &:after {
+    top: ($gutter);
+    background: $color;
+  }
+}
+
+.burger.open,.right-burger.open {
+  .burger-icon {
+    background: transparent;
+    &:before {
+      background: $open-bg;
+      transform: rotate(45deg);
+      top: 0;
+    }
+    &:after {
+      background: $open-bg;
+      transform: rotate(-45deg);
+      top: -3px;
+    }
+  }
+}
+

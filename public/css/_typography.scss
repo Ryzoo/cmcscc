@@ -1,0 +1,67 @@
+
+body{
+  font-family: $fontName, sans-serif;
+  font-size: $basicFontSize;
+  color: map_get($colors,second);
+}
+
+hr{
+  border: .5px solid #6e53a8;
+}
+
+h1,h2,h3,h4,p,ul{
+  margin: 20px 0;
+}
+
+a{
+  text-decoration: none;
+  font-weight: bold;
+  color: map_get($colors,primary);
+}
+a:hover,a:active{
+  color: map_get($colors,primary-l);
+}
+
+b{
+  font-weight: bold;
+}
+
+h1{
+  font-size: 1.63em;
+}
+
+h2{
+  font-size: 1.43em;
+}
+
+h3{
+  font-size: 1.25em;
+}
+
+h4{
+  font-size: 1.05em;
+}
+
+p, label, li{
+  font-size: .88em;
+  line-height: 1.2em;
+}
+
+small{
+  font-size: .75em;
+}
+.text-a-l{
+  text-align: left;
+  width: 100%;
+  display: block;
+}
+.text-a-r{
+  text-align: right;
+  width: 100%;
+  display: block;
+}
+.text-a-c{
+  text-align: center;
+  width: 100%;
+  display: block;
+}

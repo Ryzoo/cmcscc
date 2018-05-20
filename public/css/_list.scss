@@ -1,0 +1,28 @@
+ul{
+  list-style: none;
+}
+
+li::before {
+  content: "• ";
+  padding-right: .3em;
+  color: map_get($colors, primary);
+}
+
+.inline-list{
+  overflow: hidden;
+  li{
+    display: block;
+    float: left;
+    padding: 0 1em;
+  }
+  li:first-child{
+    padding-left: 0;
+  }
+  li:last-child{
+    padding-right: 0;
+  }
+  li::before{
+    content: "";
+    padding: 0;
+  }
+}

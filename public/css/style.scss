@@ -1,0 +1,58 @@
+@import "reset";
+
+/* Grid options */
+$headerHeight: 65px;
+$footerHeight: 300px;
+$maxPageWidth: 1600px;
+$gridGap: 10px;
+/* Grid options end*/
+
+@import "grid";
+
+/* Colors */
+$colors:(
+  primary-d: darken(#6E53A8,15%),
+  primary: #6E53A8,
+  primary-l: lighten(#6E53A8,15%),
+
+  second-d: darken(#545B6F,15%),
+  second: #545B6F,
+  second-l: lighten(#545B6F,15%),
+
+  third-d: darken(#D5D5D5,15%),
+  third: #D5D5D5,
+  third-l: lighten(#D5D5D5,15%),
+
+  a-red: #C85740,
+  a-blue: #2D84BD,
+  a-yellow: #F7BA58,
+  a-green: #2ECC71
+);
+/* Colors end */
+
+@import "colors";
+
+/* Font options */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+$fontName: Lato;
+$basicFontSize: 1em;
+/* Font options end */
+
+@import "typography";
+
+/* Distance options */
+$basicPadding: 5px;
+$radiusBasic: 5px;
+$basicMargin: 5px;
+/* Distance options end */
+
+@import "distance";
+@import "list";
+@import "navigation";
+@import "footer";
+@import "card";
+@import "form";
+
+body{
+  background: radial-gradient(ellipse at center, map_get($colors,third-l) 0%, map_get($colors,third) 100%);
+}

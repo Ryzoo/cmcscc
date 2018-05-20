@@ -1,0 +1,18 @@
+footer{
+  background: map_get($colors,second-d);
+  margin-top: 40px;
+  position: relative;
+  padding: 20px;
+  border-top: 5px solid map_get($colors,primary);
+  color: map_get($colors, third-l);
+}
+
+footer .copyright{
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  font-size: .75em;
+  text-align: center;
+  left: 0;
+  color: map_get($colors, third-l);
+}

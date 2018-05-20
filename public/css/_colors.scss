@@ -1,0 +1,9 @@
+
+@each $res in primary, primary-l, primary-d, second, second-l, second-d, third, third-l, third-d, red, green, blue, red, yellow {
+  .bck-#{$res}{
+    background-color: map_get($colors, $res);
+  }
+  .text-#{$res}{
+    color: map_get($colors, $res);
+  }
+}
