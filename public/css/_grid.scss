@@ -14,9 +14,22 @@
   @return $resolution;
 }
 
-.center-flex{
+.center-flex-a{
   display: flex;
   align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+.center-flex-x{
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.center-flex-y{
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .main-container{
@@ -32,7 +45,6 @@
 .row{
   max-width: $maxPageWidth;
   min-height: 0;
-  height: 100%;
   grid-gap: $gridGap;
   display: grid;
 }

@@ -80,6 +80,7 @@ nav li::before{
 nav li:not(.nav-logo) a{
   line-height: $headerHeight;
   color: map_get($colors,third);
+  height: $headerHeight;
 }
 
 nav .left-nav-menu{

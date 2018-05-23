@@ -60,9 +60,21 @@ input:active, textarea:active, button:active, input:focus, textarea:focus, butto
 
 /* Grid options */
 /* Grid options end*/
-.center-flex {
+.center-flex-a {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  height: 100%;
+  justify-content: center; }
+
+.center-flex-x {
+  display: flex;
+  height: 100%;
+  justify-content: center; }
+
+.center-flex-y {
+  display: flex;
+  align-items: center;
+  height: 100%; }
 
 .main-container {
   display: grid;
@@ -76,7 +88,6 @@ input:active, textarea:active, button:active, input:focus, textarea:focus, butto
 .row, .row-1, .row-2, .row-3, .row-4, .row-5, .row-6, .row-7, .row-8, .row-9, .row-10, .row-11, .row-12 {
   max-width: 1600px;
   min-height: 0;
-  height: 100%;
   grid-gap: 10px;
   display: grid; }
 
@@ -435,7 +446,9 @@ i {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  margin: 0 5px;
   font-size: 1em;
+  color: inherit;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -1153,7 +1166,8 @@ nav li::before {
 
 nav li:not(.nav-logo) a {
   line-height: 65px;
-  color: #D5D5D5; }
+  color: #D5D5D5;
+  height: 65px; }
 
 @media (max-width: 991px) {
   nav .left-nav-menu {
@@ -1445,6 +1459,16 @@ button {
   height: 21px;
   font-size: 0.7em; }
 
+.button-md {
+  line-height: .9em;
+  height: 31px;
+  font-size: .9em; }
+
+.button-lg {
+  line-height: 1.2em;
+  height: 35px;
+  font-size: 1.2em; }
+
 button:hover {
   background: #9885c3;
   cursor: pointer; }
@@ -1459,11 +1483,11 @@ button:focus, button:active {
 
 .button-free-p:hover {
   background: #6E53A8;
-  color: #fbfbfb; }
+  color: #fbfbfb !important; }
 
 .button-free-p:focus, .button-free-p:active {
   background: #4c3a75;
-  color: #fbfbfb; }
+  color: #fbfbfb !important; }
 
 .button-free-s {
   color: #545B6F;
@@ -1472,11 +1496,11 @@ button:focus, button:active {
 
 .button-free-s:hover {
   background: #545B6F;
-  color: #fbfbfb; }
+  color: #fbfbfb !important; }
 
 .button-free-s:focus, .button-free-s:active {
   background: #333743;
-  color: #fbfbfb; }
+  color: #fbfbfb !important; }
 
 .button-free-l {
   color: #fbfbfb;
@@ -1485,11 +1509,11 @@ button:focus, button:active {
 
 .button-free-l:hover {
   background: #D5D5D5;
-  color: #fbfbfb; }
+  color: #fbfbfb !important; }
 
 .button-free-l:focus, .button-free-l:active {
   background: #afafaf;
-  color: #fbfbfb; }
+  color: #fbfbfb !important; }
 
 .button-l {
   color: #545B6F;
@@ -1498,11 +1522,11 @@ button:focus, button:active {
 
 .button-l:hover {
   background: #D5D5D5;
-  color: #545B6F; }
+  color: #545B6F !important; }
 
 .button-l:focus, .button-l:active {
   background: #afafaf;
-  color: #fbfbfb; }
+  color: #fbfbfb !important; }
 
 .button-s {
   color: #fbfbfb;
@@ -1511,11 +1535,11 @@ button:focus, button:active {
 
 .button-s:hover {
   background: #778098;
-  color: #fbfbfb; }
+  color: #fbfbfb !important; }
 
 .button-s:focus, .button-s:active {
   background: #333743;
-  color: #fbfbfb; }
+  color: #fbfbfb !important; }
 
 .button-p {
   color: #fbfbfb;
@@ -1524,11 +1548,11 @@ button:focus, button:active {
 
 .button-p:hover {
   background: #9885c3;
-  color: #fbfbfb; }
+  color: #fbfbfb !important; }
 
 .button-p:focus, .button-p:active {
   background: #4c3a75;
-  color: #fbfbfb; }
+  color: #fbfbfb !important; }
 
 .button-outline-p {
   color: #6E53A8;
@@ -1537,11 +1561,11 @@ button:focus, button:active {
 
 .button-outline-p:hover {
   background: #6E53A8;
-  color: #fbfbfb; }
+  color: #fbfbfb !important; }
 
 .button-outline-p:focus, .button-outline-p:active {
   background: #4c3a75;
-  color: #fbfbfb; }
+  color: #fbfbfb !important; }
 
 .button-outline-s {
   color: #545B6F;
@@ -1550,11 +1574,11 @@ button:focus, button:active {
 
 .button-outline-s:hover {
   background: #545B6F;
-  color: #fbfbfb; }
+  color: #fbfbfb !important; }
 
 .button-outline-s:focus, .button-outline-s:active {
   background: #333743;
-  color: #fbfbfb; }
+  color: #fbfbfb !important; }
 
 .button-outline-l {
   color: #fbfbfb;
@@ -1563,11 +1587,11 @@ button:focus, button:active {
 
 .button-outline-l:hover {
   background: #D5D5D5;
-  color: #fbfbfb; }
+  color: #fbfbfb !important; }
 
 .button-outline-l:focus, .button-outline-l:active {
   background: #afafaf;
-  color: #fbfbfb; }
+  color: #fbfbfb !important; }
 
 body {
   background: radial-gradient(ellipse at center, #fbfbfb 0%, #D5D5D5 100%); }

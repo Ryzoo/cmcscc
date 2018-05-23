@@ -122,6 +122,16 @@ button{
   height: 21px;
   font-size: 0.7em;
 }
+.button-md{
+  line-height: .9em;
+  height: 31px;
+  font-size: .9em;
+}
+.button-lg{
+  line-height: 1.2em;
+  height: 35px;
+  font-size: 1.2em;
+}
 
 button:hover{
   background: map_get($colors, primary-l);
@@ -139,12 +149,12 @@ button:focus, button:active{
 }
 .button-free-p:hover{
   background: map_get($colors, primary);
-  color: map_get($colors, third-l);
+  color: map_get($colors, third-l) !important;
 }
 
 .button-free-p:focus, .button-free-p:active{
   background: map_get($colors, primary-d);
-  color: map_get($colors, third-l);
+  color: map_get($colors, third-l) !important;
 }
 
 .button-free-s{
@@ -154,12 +164,12 @@ button:focus, button:active{
 }
 .button-free-s:hover{
   background: map_get($colors, second);
-  color: map_get($colors, third-l);
+  color: map_get($colors, third-l) !important;
 }
 
 .button-free-s:focus, .button-free-s:active{
   background: map_get($colors, second-d);
-  color: map_get($colors, third-l);
+  color: map_get($colors, third-l) !important;
 }
 
 .button-free-l{
@@ -169,12 +179,12 @@ button:focus, button:active{
 }
 .button-free-l:hover{
   background: map_get($colors, third);
-  color: map_get($colors, third-l);
+  color: map_get($colors, third-l) !important;
 }
 
 .button-free-l:focus, .button-free-l:active{
   background: map_get($colors, third-d);
-  color: map_get($colors, third-l);
+  color: map_get($colors, third-l) !important;
 }
 
 .button-l{
@@ -184,12 +194,12 @@ button:focus, button:active{
 }
 .button-l:hover{
   background: map_get($colors, third);
-  color: map_get($colors, second);
+  color: map_get($colors, second) !important;
 }
 
 .button-l:focus, .button-l:active{
   background: map_get($colors, third-d);
-  color: map_get($colors, third-l);
+  color: map_get($colors, third-l) !important;
 }
 
 .button-s{
@@ -199,12 +209,12 @@ button:focus, button:active{
 }
 .button-s:hover{
   background: map_get($colors, second-l);
-  color: map_get($colors, third-l);
+  color: map_get($colors, third-l) !important;
 }
 
 .button-s:focus, .button-s:active{
   background: map_get($colors, second-d);
-  color: map_get($colors, third-l);
+  color: map_get($colors, third-l) !important;
 }
 
 .button-p{
@@ -214,12 +224,12 @@ button:focus, button:active{
 }
 .button-p:hover{
   background: map_get($colors, primary-l);
-  color: map_get($colors, third-l);
+  color: map_get($colors, third-l) !important;
 }
 
 .button-p:focus, .button-p:active{
   background: map_get($colors, primary-d);
-  color: map_get($colors, third-l);
+  color: map_get($colors, third-l) !important;
 }
 
 .button-outline-p{
@@ -229,12 +239,12 @@ button:focus, button:active{
 }
 .button-outline-p:hover{
   background: map_get($colors, primary);
-  color: map_get($colors, third-l);
+  color: map_get($colors, third-l) !important;
 }
 
 .button-outline-p:focus, .button-outline-p:active{
   background: map_get($colors, primary-d);
-  color: map_get($colors, third-l);
+  color: map_get($colors, third-l) !important;
 }
 
 .button-outline-s{
@@ -244,12 +254,12 @@ button:focus, button:active{
 }
 .button-outline-s:hover{
   background: map_get($colors, second);
-  color: map_get($colors, third-l);
+  color: map_get($colors, third-l) !important;
 }
 
 .button-outline-s:focus, .button-outline-s:active{
   background: map_get($colors, second-d);
-  color: map_get($colors, third-l);
+  color: map_get($colors, third-l) !important;
 }
 
 .button-outline-l{
@@ -259,11 +269,11 @@ button:focus, button:active{
 }
 .button-outline-l:hover{
   background: map_get($colors, third);
-  color: map_get($colors, third-l);
+  color: map_get($colors, third-l) !important;
 }
 
 .button-outline-l:focus, .button-outline-l:active{
   background: map_get($colors, third-d);
-  color: map_get($colors, third-l);
+  color: map_get($colors, third-l) !important;
 }
 
