@@ -32,6 +32,7 @@
 .row{
   max-width: $maxPageWidth;
   min-height: 0;
+  height: 100%;
   grid-gap: $gridGap;
   display: grid;
 }

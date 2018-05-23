@@ -41,16 +41,12 @@
         </main>
         <footer>
             <div class="row-12">
-                <div class="col-12 text-a-c">
-                    <h3>Jak zacząć?</h3>
-                    <p>To bardzo proste, wystarczy że podłączysz te biblioteki do swojego projektu, a na koniec dodasz nasz framework</p>
-                    <ul>
-                        <li><a href="https://code.jquery.com/">jQuery</a></li>
-                        <li><a href="https://cdnjs.com/libraries/hammer.js/">Hammer.js</a></li>
-                    </ul>
+                <div class="col-4 col-sm-12"></div>
+                <div class="col-4 col-sm-12">
+                    <div class="copyright">All rights reeserved</div>
                 </div>
+                <div class="col-4 col-sm-12"></div>
             </div>
-            <div class="copyright">All rights reeserved</div>
         </footer>
     </div>
 </template>

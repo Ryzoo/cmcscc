@@ -19,9 +19,8 @@ code{
   padding: 2px 5px;
   margin: 0 5px;
   line-height: 2em;
-
   letter-spacing: .05em;
-  border-radius: 5px;
+  border-radius: $radiusBasic;
 }
 
 a{

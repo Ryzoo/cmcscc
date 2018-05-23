@@ -2,7 +2,7 @@
 
 /* Grid options */
 $headerHeight: 65px;
-$footerHeight: 300px;
+$footerHeight: 50px;
 $maxPageWidth: 1600px;
 $gridGap: 10px;
 /* Grid options end*/
@@ -38,15 +38,15 @@ $fontName: Lato;
 $basicFontSize: 1em;
 /* Font options end */
 
-@import "typography";
 @import "icons";
 
 /* Distance options */
 $basicPadding: 5px;
-$radiusBasic: 5px;
+$radiusBasic: 2px;
 $basicMargin: 5px;
 /* Distance options end */
 
+@import "typography";
 @import "distance";
 @import "list";
 @import "navigation";
