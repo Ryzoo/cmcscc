@@ -1,0 +1,76 @@
+.modal{
+  position: fixed;
+  min-width: 300px;
+  min-height: 200px;
+  max-height: calc(100vh - 50px);
+  max-width: calc(100vw - 50px);
+  width: auto;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  border-radius: $radiusBasic;
+  transform: translate(-50%,-50%);
+  transition: all .3s;
+  box-shadow: 2px 1px 11px -3px map_get($colors,third-d);
+}
+
+.modal-header{
+  padding: 10px 50px 10px 10px;
+  line-height: .8em;
+  font-size: .8em;
+  letter-spacing: .5px;
+  background: map_get($colors,primary);
+  color: map_get($colors,third-l);
+}
+
+.modal-body{
+
+}
+
+.modal-action{
+
+}
+
+.modal-center{
+
+}
+
+.modal-top{
+
+}
+
+.modal-bottom{
+
+}
+
+.modal-close{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  top: 6px;
+  right: 5px;
+  &:hover {
+    transform: rotate(90deg);
+  }
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: map_get($colors,third-l);
+  }
+  &::before {
+    border-radius: 100%;
+    transform: rotate(45deg)
+  }
+  &::after {
+    border-radius: 100%;
+    transform: rotate(-45deg)
+  }
+}

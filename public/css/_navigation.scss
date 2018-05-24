@@ -6,8 +6,11 @@ nav{
   z-index: 1;
 }
 
-nav .col{
+nav .col:first-child{
   background:  map_get($colors,second-d);
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 nav li, nav{
@@ -70,7 +73,6 @@ nav .activedHeaderDropdown:after{
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
 }
-
 
 nav li::before{
   content: "";

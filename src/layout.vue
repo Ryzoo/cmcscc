@@ -3,7 +3,7 @@
         <div></div>
         <nav class="bck-second-d text-third" >
             <div class="row-12 p-x-5">
-                <div class="col center-flex">
+                <div class="col">
                     <div class="burger">
                         <div class="burger-icon"></div>
                     </div>
@@ -22,6 +22,7 @@
                                 <li><router-link to="/formularze">Formularze</router-link></li>
                                 <li><router-link to="/tabele">Tabele</router-link></li>
                                 <li><router-link to="/przyciski">Przyciski</router-link></li>
+                                <li><router-link to="/modal">Okna modal</router-link></li>
                             </ul>
                         </li>
                     </ul>

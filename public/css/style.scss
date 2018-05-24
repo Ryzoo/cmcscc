@@ -37,15 +37,13 @@ $colors:(
 $fontName: Lato;
 $basicFontSize: 1em;
 /* Font options end */
-
-@import "icons";
-
 /* Distance options */
 $basicPadding: 5px;
 $radiusBasic: 2px;
 $basicMargin: 5px;
 /* Distance options end */
 
+@import "icons";
 @import "typography";
 @import "distance";
 @import "list";
@@ -57,3 +55,8 @@ $basicMargin: 5px;
 body{
   background: radial-gradient(ellipse at center, map_get($colors,third-l) 0%, map_get($colors,third) 100%);
 }
+
+/* Modal options */
+
+/* Modal options end */
+@import "modal";
