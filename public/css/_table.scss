@@ -1,0 +1,57 @@
+table {
+  width: 100%;
+}
+
+table tr {
+  border-top: 1px solid #6F6F6F;
+}
+
+table thead tr {
+  border-top: none;
+  text-align: left;
+}
+
+table .table-icon {
+  text-align: center;
+}
+
+table th,
+table td {
+  padding: 15px 5px;
+}
+
+table button {
+  border: none;
+  background: transparent;
+}
+
+table button:focus {
+  outline: none;
+}
+
+table button:hover {
+  cursor: pointer;
+}
+
+table .func-icons {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+table .func-icons.active {
+  display: flex;
+}
+
+table .active i {
+  color: white;
+}
+
+table .icons-list {
+  display: none;
+  position: absolute;
+  top: auto;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5B247A;
+}

@@ -8,6 +8,7 @@ import Buttons from "./pages/Buttons"
 import Icons from "./pages/Icons"
 import Colors from "./pages/Colors"
 import Additional from "./pages/Additional"
+import Tables from "./pages/Tables"
 
 const router = [
     { path: '/', component: About },
@@ -19,7 +20,8 @@ const router = [
     { path: '/kolory', component: Colors },
     { path: '/ikony', component: Icons },
     { path: '/przyciski', component: Buttons },
-    { path: '/dodatki', component: Additional }
+    { path: '/dodatki', component: Additional },
+    { path: '/tabele', component: Tables }
 ];
 
 export default router;

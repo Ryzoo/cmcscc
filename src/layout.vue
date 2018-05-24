@@ -3,7 +3,7 @@
         <div></div>
         <nav class="bck-second-d text-third" >
             <div class="row-12 p-x-5">
-                <div class="col center-flex">
+                <div class="col center-flex-y">
                     <div class="burger">
                         <div class="burger-icon"></div>
                     </div>

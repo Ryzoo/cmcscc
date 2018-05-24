@@ -57,3 +57,10 @@ $basicMargin: 5px;
 body{
   background: radial-gradient(ellipse at center, map_get($colors,third-l) 0%, map_get($colors,third) 100%);
 }
+
+/* Table options */
+
+
+/* Table options end */
+
+@import "table";
