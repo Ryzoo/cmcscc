@@ -9,6 +9,7 @@ import Icons from "./pages/Icons"
 import Colors from "./pages/Colors"
 import Additional from "./pages/Additional"
 import Modals from "./pages/Modals"
+import Tables from "./pages/Tables"
 
 const router = [
     { path: '/', component: About },
@@ -22,6 +23,7 @@ const router = [
     { path: '/przyciski', component: Buttons },
     { path: '/modal', component: Modals },
     { path: '/dodatki', component: Additional }
+    { path: '/tabele', component: Tables }
 ];
 
 export default router;

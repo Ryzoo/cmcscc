@@ -1,4 +1,35 @@
 $(function(){
+    navigation();
+    tableIcons();
+
+    this.isMobile = $(document).width() <= 996;
+
+    const self = this;
+
+    $(document).off('click', '.table-settings');
+    $(document).on('click', '.table-settings', function () {
+        $('.table-content .func-icons').removeClass('active');
+        let iconList = $(this).parent().next('.func-icons');
+        iconList.addClass('active');
+        iconList.css("height", $(this).parent().parent().height());
+        iconList.css("left", $(this).parent().parent().offset().left+"px");
+        iconList.css("width", $(this).parent().parent().width()+"px");
+        const hasDiv = $(this).parent().parent().find('> div').length;
+        if (self.isMobile && !hasDiv) {
+            const number = $(this).parent().parent().index();
+            let funcIcons = $('.large-only .table-content').eq((number / 4) - 1).find('.func-icons').clone();
+            $(this).parent().parent().append(funcIcons);
+            $(this).parent().next().addClass('active');
+        }
+    });
+
+    $(document).off('mouseleave', '.icons-list');
+    $(document).on('mouseleave', '.icons-list', function () {
+        $(this).removeClass('active');
+    });
+});
+
+function navigation() {
     let hideShowTimeout = null;
     let actualMousePos = 0;
 
@@ -164,6 +195,25 @@ $(function(){
             $("nav .burger, nav .right-burger").hide();
         }
     }
+}
 
-});
+function tableIcons() {
 
+    const hasIcon = $('table td').hasClass('table-icon');
+    let mainIcon;
+    let iconSize;
+    if (hasIcon) {
+        const tableIcon = $('.table-icon');
+        mainIcon = tableIcon.data('main-icon');
+        iconSize = tableIcon.data('icon-size');
+        if (typeof iconSize === "undefined") {
+            iconSize = 'md';
+        }
+        $('<div class="icons-list func-icons"><div class="icons-content"></div></div>').insertAfter(tableIcon);
+        tableIcon.children().clone().appendTo('.icons-content');
+        tableIcon.empty();
+        tableIcon.append(`<div class="table-settings"><i class="i-${mainIcon} i-${iconSize}"></i></div>`);
+    }
+
+
+}
