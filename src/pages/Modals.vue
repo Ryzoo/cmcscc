@@ -4,19 +4,36 @@
             <h3>Okna modal</h3>
             <hr/>
             <p>Są to okna z dodatkową zawartością. Pytające o coś lub jedynie informujące. </p>
-
+            <ul>
+                <li><code>modal</code> - tworzy modal z danego kontenera</li>
+                <li><code>modal-header</code> - element modala odpowiadający za tytuł</li>
+                <li><code>modal-body</code> - główna cześć, zawiera całą zawartość</li>
+                <li><code>modal-action</code> - jeśli modal ma mieć przyciski, dodaj je tutaj</li>
+            </ul>
+            <p>Modal domyślnie jest ustawiony na środku ekranu, możesz jednak to zmienić.</p>
+            <ul>
+                <li><code>modal-top</code> - Modal wyświetla się od góry strony</li>
+                <li><code>modal-bottom</code> - Modal wyświetla się od dołu strony</li>
+            </ul>
         </div>
         <div class="col-6 col-sm-12">
+            <button @click="showModal('#modal1')">Pokaż modal</button>
         </div>
 
         <!-- modal definitions -->
-        <div class="modal">
+        <div class="modal" id="modal1">
             <div class="modal-header">
                 To jest bardzo fajny modal
-                <span class="modal-close"></span>
             </div>
             <div class="modal-body">
-                To jest bardzo fajny modal
+                <form class="form-darkner">
+                    <label> Imię</label>
+                    <input type="text" placeholder="Podaj swoje imię "/>
+                </form>
+            </div>
+            <div class="modal-action flex-align-right">
+                <button class="button-free-s">Anuluj</button>
+                <button>Akceptuje</button>
             </div>
         </div>
 
@@ -25,7 +42,12 @@
 
 <script>
     export default {
-        name: "Modals"
+        name: "Modals",
+        methods: {
+            showModal: function (name) {
+                $(name).showModal();
+            }
+        }
     }
 </script>
 

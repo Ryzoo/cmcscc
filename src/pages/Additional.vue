@@ -12,6 +12,15 @@
                 <li><code>p-x-x</code> Dodaje padding na osi x, x (1-5) np. p-x-2</li>
                 <li><code>p-y-x</code> Dodaje padding na osi y, x (1-5) np. p-y-2</li>
             </ul>
+            <h3>Pozycjonowanie - flex</h3>
+            <ul>
+                <li><code>display-flex</code> Ustala wyświetlanie na typ flex </li>
+                <li><code>flex-align-left</code> Elementy układane są od lewej strony </li>
+                <li><code>flex-align-right</code> Elementy układane są od prawej strony </li>
+                <li><code>center-flex-y</code> Pozycjonuje elementy centralnie w pionie</li>
+                <li><code>center-flex-x</code> Pozycjonuje elementy centralnie w poziomie</li>
+                <li><code>center-flex-a</code> Pozycjonuje elementy centralnie w kontenerze</li>
+            </ul>
         </div>
         <div class="col-6">
             <h3>Margin</h3>

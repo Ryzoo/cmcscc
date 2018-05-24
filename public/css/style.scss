@@ -56,16 +56,13 @@ body{
   background: radial-gradient(ellipse at center, map_get($colors,third-l) 0%, map_get($colors,third) 100%);
 }
 
-<<<<<<< HEAD
 /* Modal options */
 
 /* Modal options end */
 @import "modal";
-=======
+
 /* Table options */
 
 
 /* Table options end */
-
 @import "table";
->>>>>>> master

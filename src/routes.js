@@ -22,7 +22,7 @@ const router = [
     { path: '/ikony', component: Icons },
     { path: '/przyciski', component: Buttons },
     { path: '/modal', component: Modals },
-    { path: '/dodatki', component: Additional }
+    { path: '/dodatki', component: Additional },
     { path: '/tabele', component: Tables }
 ];
 

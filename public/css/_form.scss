@@ -5,6 +5,12 @@ form{
   display: flex;
   flex-wrap: wrap;
   border-radius: $radiusBasic;
+
+  button{
+    margin-left: 0;
+    margin-right: 0;
+  };
+
 }
 
 form label{
@@ -35,6 +41,26 @@ form label{
 
 form > *{
   display: block;
+}
+
+form.form-darkner{
+  input, textarea{
+    background: map_get($colors, second);
+    color: map_get($colors, third-l);
+  }
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: map_get($colors, third-d);
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: map_get($colors, third-d);
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: map_get($colors, third-d);
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: map_get($colors, third-d);
 }
 
 input, textarea{
@@ -71,7 +97,7 @@ input[type="checkbox"]:checked:after ,input[type="radio"]:checked:after {
   display: block;
   width: 5px;
   height: 10px;
-  border: solid map_get($colors, primary);
+  border: solid map_get($colors, primary-l);
   border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -83,7 +109,7 @@ input[type="checkbox"]:checked:after ,input[type="radio"]:checked:after {
 
 input[type="checkbox"]:hover,input[type="radio"]:hover{
   cursor: pointer;
-  border: 1px solid map_get($colors, primary);
+  border: 1px solid map_get($colors, primary-l);
 }
 
 .checkbox-label,.radio-label{

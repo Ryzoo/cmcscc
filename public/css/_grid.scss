@@ -14,24 +14,6 @@
   @return $resolution;
 }
 
-.center-flex-a{
-  display: flex;
-  align-items: center;
-  height: 100%;
-  justify-content: center;
-}
-.center-flex-x{
-  display: flex;
-  height: 100%;
-  justify-content: center;
-}
-
-.center-flex-y{
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-
 .main-container{
   display: grid;
   grid-template-columns: 1fr;
@@ -62,9 +44,6 @@
     position: relative;
     grid-column-end: span $i;
   }
-  .col-offset-#{$i}{
-    grid-column-start: $i+1;
-  }
   @each $res in sm, md, lg {
     .col-#{$res}-#{$i}{
       @if $res == sm {
@@ -74,6 +53,25 @@
       } @else{
         @media  (min-width: getMinResolutionForRes($res)) and (max-width: getMaxResolutionForRes($res)){
           grid-column-end: span $i !important;
+        }
+      }
+    }
+  }
+}
+
+@for $i from 0 through 11 {
+  .col-offset-#{$i}{
+    grid-column-start: $i+1;
+  }
+  @each $res in sm, md, lg {
+    .col-offset-#{$res}-#{$i}{
+      @if $res == sm {
+        @media  (max-width: getMaxResolutionForRes($res)){
+          grid-column-start: $i+1 !important;
+        }
+      } @else{
+        @media  (min-width: getMinResolutionForRes($res)) and (max-width: getMaxResolutionForRes($res)){
+          grid-column-start: $i+1 !important;
         }
       }
     }

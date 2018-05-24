@@ -1,7 +1,7 @@
 .modal{
   position: fixed;
-  min-width: 300px;
-  min-height: 200px;
+  z-index: 999;
+  min-width: 400px;
   max-height: calc(100vh - 50px);
   max-width: calc(100vw - 50px);
   width: auto;
@@ -11,25 +11,33 @@
   overflow: hidden;
   border-radius: $radiusBasic;
   transform: translate(-50%,-50%);
+  opacity: 0;
+  visibility: hidden;
   transition: all .3s;
-  box-shadow: 2px 1px 11px -3px map_get($colors,third-d);
 }
 
 .modal-header{
+  position: relative;
   padding: 10px 50px 10px 10px;
-  line-height: .8em;
-  font-size: .8em;
+  line-height: 1em;
+  font-size: 1em;
   letter-spacing: .5px;
-  background: map_get($colors,primary);
-  color: map_get($colors,third-l);
+  background: map_get($colors,second-d);
+  color: map_get($colors,third);
 }
 
 .modal-body{
-
+  padding: 10px 10px 10px;
+  background: map_get($colors,third-l);
 }
 
 .modal-action{
+  padding: 0 10px 10px;
+  background: map_get($colors,third-l);
+}
 
+.modal-action button{
+  margin: 0;
 }
 
 .modal-center{
@@ -37,11 +45,33 @@
 }
 
 .modal-top{
-
+  top: 25px;
+  transform: translate(-50%,0);
 }
 
 .modal-bottom{
+  top: unset;
+  bottom: 25px;
+  transform: translate(-50%,0);
+}
 
+.modal-page-hide{
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.75);
+  width: 100vw;
+  height: 100vh;
+  opacity: .5;
+  visibility: hidden;
+  transition: opacity .3s ease-in-out;
+}
+
+.modal-page-show, .modal-show{
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .2s ease-in-out;
 }
 
 .modal-close{
@@ -50,8 +80,8 @@
   height: 20px;
   overflow: hidden;
   cursor: pointer;
-  top: 6px;
-  right: 5px;
+  top: 8px;
+  right: 10px;
   &:hover {
     transform: rotate(90deg);
   }
@@ -63,7 +93,7 @@
     top: 50%;
     left: 0;
     margin-top: -1px;
-    background: map_get($colors,third-l);
+    background: map_get($colors,third-d);
   }
   &::before {
     border-radius: 100%;

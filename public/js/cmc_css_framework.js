@@ -1,32 +1,7 @@
 $(function(){
     navigation();
-    tableIcons();
-
-    this.isMobile = $(document).width() <= 996;
-
-    const self = this;
-
-    $(document).off('click', '.table-settings');
-    $(document).on('click', '.table-settings', function () {
-        $('.table-content .func-icons').removeClass('active');
-        let iconList = $(this).parent().next('.func-icons');
-        iconList.addClass('active');
-        iconList.css("height", $(this).parent().parent().height());
-        iconList.css("left", $(this).parent().parent().offset().left+"px");
-        iconList.css("width", $(this).parent().parent().width()+"px");
-        const hasDiv = $(this).parent().parent().find('> div').length;
-        if (self.isMobile && !hasDiv) {
-            const number = $(this).parent().parent().index();
-            let funcIcons = $('.large-only .table-content').eq((number / 4) - 1).find('.func-icons').clone();
-            $(this).parent().parent().append(funcIcons);
-            $(this).parent().next().addClass('active');
-        }
-    });
-
-    $(document).off('mouseleave', '.icons-list');
-    $(document).on('mouseleave', '.icons-list', function () {
-        $(this).removeClass('active');
-    });
+    tables();
+    modals();
 });
 
 function navigation() {
@@ -196,9 +171,32 @@ function navigation() {
         }
     }
 }
+function tables() {
+    this.isMobile = $(document).width() <= 996;
 
-function tableIcons() {
+    const self = this;
 
+    $(document).off('click', '.table-settings');
+    $(document).on('click', '.table-settings', function () {
+        $('.table-content .func-icons').removeClass('active');
+        let iconList = $(this).parent().next('.func-icons');
+        iconList.addClass('active');
+        iconList.css("height", $(this).parent().parent().height());
+        iconList.css("left", $(this).parent().parent().offset().left+"px");
+        iconList.css("width", $(this).parent().parent().width()+"px");
+        const hasDiv = $(this).parent().parent().find('> div').length;
+        if (self.isMobile && !hasDiv) {
+            const number = $(this).parent().parent().index();
+            let funcIcons = $('.large-only .table-content').eq((number / 4) - 1).find('.func-icons').clone();
+            $(this).parent().parent().append(funcIcons);
+            $(this).parent().next().addClass('active');
+        }
+    });
+
+    $(document).off('mouseleave', '.icons-list');
+    $(document).on('mouseleave', '.icons-list', function () {
+        $(this).removeClass('active');
+    });
     const hasIcon = $('table td').hasClass('table-icon');
     let mainIcon;
     let iconSize;
@@ -215,5 +213,62 @@ function tableIcons() {
         tableIcon.append(`<div class="table-settings"><i class="i-${mainIcon} i-${iconSize}"></i></div>`);
     }
 
+
+}
+function modals(){
+    if($('.modal-page-hide').length <= 0) {
+        $("body").append(`<div class="modal-page-hide"></div>`);
+        $(document).off('click','.modal-page-hide');
+        $(document).on('click','.modal-page-hide',()=>{
+            $('.modal-show').each(function() {
+                $(this).hideModal();
+            });
+        })
+    }
+
+    jQuery.fn.extend({
+        showModal: function() {
+            return this.each(function() {
+                if(checkIsModal(this)){
+                    addCloseIcon(this);
+                    showModal(this);
+                }
+            });
+        },
+        hideModal: function() {
+            return this.each(function() {
+                if(checkIsModal(this)){
+                    addCloseIcon(this);
+                    hideModal(this);
+                }
+            });
+        }
+    });
+
+    function checkIsModal(element){
+        return $(element).hasClass("modal");
+    }
+
+    function addCloseIcon(element){
+        let modalCloseIcon = $(element).find('.modal-close');
+        if(modalCloseIcon.length <=0 ){
+            $(element).append(`<span class="modal-close"></span>`);
+            modalCloseIcon = $(element).find('.modal-close').first();
+            modalCloseIcon.off('click');
+            modalCloseIcon.on('click',()=>{
+                hideModal(element);
+            });
+        }
+    }
+
+    function showModal(modal){
+        $('.modal-page-hide').first().addClass('modal-page-show');
+        $(modal).first().addClass('modal-show');
+    }
+
+    function hideModal(modal){
+        $('.modal-page-hide').first().removeClass('modal-page-show');
+        $(modal).first().removeClass('modal-show');
+    }
 
 }
