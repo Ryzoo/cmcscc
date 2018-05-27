@@ -1490,11 +1490,11 @@ footer .copyright {
 .card {
   background: #fbfbfb;
   border-radius: 2px;
-  overflow: hidden;
   box-shadow: 2px 1px 11px -3px #afafaf; }
 
 .card .card-image {
-  width: 100%; }
+  width: 100%;
+  position: relative; }
   .card .card-image img {
     width: 100%;
     height: auto; }
