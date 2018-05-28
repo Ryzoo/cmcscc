@@ -1,7 +1,14 @@
+
+
 $(function(){
     navigation();
     tables();
     modals();
+
+    window.jsFrameworkAfterChangeRoute = ()=>{
+        if($(window).width() < 991){ $("nav .burger, nav .right-burger").show();}
+        else{ $("nav .burger, nav .right-burger").hide(); }
+    }
 });
 
 function navigation() {
@@ -83,6 +90,7 @@ function navigation() {
         $('.burger').first().removeClass("open");
         $(".left-nav-menu").first().removeClass("menu-left-show");
     }
+
     $(document).on("click",'.burger', function() {
         $(this).toggleClass("open");
         $(".left-nav-menu").first().toggleClass("menu-left-show");
@@ -170,6 +178,7 @@ function navigation() {
             $("nav .burger, nav .right-burger").hide();
         }
     }
+
 }
 function tables() {
     this.isMobile = $(document).width() <= 996;

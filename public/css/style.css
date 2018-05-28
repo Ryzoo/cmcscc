@@ -721,6 +721,39 @@ small {
 .text-md {
   font-size: 1.2em; }
 
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px; }
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px; }
+
+::-webkit-scrollbar-thumb {
+  background: #6E53A8;
+  border: 0px none #6E53A8;
+  border-radius: 50px; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6E53A8; }
+
+::-webkit-scrollbar-thumb:active {
+  background: #545B6F; }
+
+::-webkit-scrollbar-track {
+  background: #333743;
+  border: 0px none #6E53A8;
+  border-radius: 0px; }
+
+::-webkit-scrollbar-track:hover {
+  background: #666666; }
+
+::-webkit-scrollbar-track:active {
+  background: #333333; }
+
+::-webkit-scrollbar-corner {
+  background: transparent; }
+
 .p-l-1 {
   padding-left: 5px; }
 
@@ -1208,6 +1241,9 @@ small {
   display: flex;
   flex-wrap: wrap; }
 
+.w-100 {
+  width: 100%; }
+
 .center-flex-a {
   align-items: center;
   height: 100%;
@@ -1605,6 +1641,44 @@ input[type="checkbox"]:hover, input[type="radio"]:hover {
   cursor: pointer;
   border: 1px solid #9885c3; }
 
+.input-with-icon, .input-with-icon-close {
+  position: relative; }
+  .input-with-icon input, .input-with-icon-close input {
+    padding-right: 28px;
+    width: calc(100% - 35px); }
+  .input-with-icon i, .input-with-icon-close i {
+    position: absolute;
+    right: 0;
+    top: 13px;
+    transition: all .2s ease; }
+
+.input-with-icon:focus-within i, .input-with-icon-close:focus-within i {
+  top: 12px;
+  color: #6E53A8;
+  transform: scale(1.2);
+  transition: all .2s ease; }
+
+.input-with-icon-close i:first-child {
+  visibility: visible;
+  opacity: 1; }
+.input-with-icon-close i:last-child {
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0; }
+.input-with-icon-close i:last-child:hover {
+  transform: rotate(-75deg); }
+
+.input-with-icon-close:focus-within i {
+  top: 12px;
+  color: #6E53A8;
+  transform: scale(1.2);
+  transition: all .2s ease;
+  visibility: hidden;
+  opacity: 0; }
+.input-with-icon-close:focus-within i:last-child {
+  visibility: visible;
+  opacity: 1; }
+
 .checkbox-label, .radio-label {
   margin: 10px 0;
   display: flex;
@@ -1870,7 +1944,7 @@ table {
   width: 100%; }
 
 table tr {
-  border-top: 1px solid #6F6F6F; }
+  border-top: 1px solid #dadada; }
 
 table thead tr {
   border-top: none;
@@ -1881,7 +1955,7 @@ table .table-icon {
 
 table th,
 table td {
-  padding: 15px 5px; }
+  padding: 8px 5px; }
 
 table button {
   border: none;
@@ -1910,6 +1984,6 @@ table .icons-list {
   top: auto;
   justify-content: space-between;
   align-items: center;
-  background-color: #5B247A; }
+  background-color: #6E53A8; }
 
 /*# sourceMappingURL=style.css.map */

@@ -12,13 +12,19 @@
                 <li><code>form-align-right</code> - elementy w formularzu przesuniete w prawo</li>
                 <li><code>form-shadow</code> - form ma pod soba lekki cien</li>
                 <li><code>form-no-border</code> - usuwa border z forma</li>
+                <li><code>input-with-icon</code> - kontener ktory posiada w sobie input oraz ikone</li>
+                <li><code>input-with-icon-close</code> - kontener ktory posiada w sobie input oraz 2 ikony zmienne w zaleznosci od stanu inputa</li>
             </ul>
             <div class="row-6">
                 <div class="col-3 p-5">
                     <p>Jaśniejszy motyw</p>
                     <form class="form-align-right" action="">
                         <label for="email">Email</label>
-                        <input type="email" id="email" value="" placeholder="Adres email">
+                        <div class="w-100 input-with-icon-close">
+                            <input type="email" id="email" value="" placeholder="Adres email">
+                            <i class="i-calendar"></i>
+                            <i class="i-cross"></i>
+                        </div>
                         <label for="nazwisko">Nazwisko</label>
                         <textarea id="nazwisko" placeholder="Podaj nazwisko"></textarea>
                         <label >Checbox</label>

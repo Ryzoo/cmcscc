@@ -112,6 +112,60 @@ input[type="checkbox"]:hover,input[type="radio"]:hover{
   border: 1px solid map_get($colors, primary-l);
 }
 
+.input-with-icon{
+  position: relative;
+  input{
+    padding-right: 28px;
+    width: calc(100% - 35px);
+  }
+  i{
+    position: absolute;
+    right: 0;
+    top: 13px;
+    transition: all .2s ease;
+  }
+}
+
+.input-with-icon:focus-within {
+  i{
+    top: 12px;
+    color: map_get($colors, primary);
+    transform: scale(1.2);
+    transition: all .2s ease;
+  }
+}
+
+.input-with-icon-close{
+  @extend .input-with-icon;
+  i:first-child{
+    visibility: visible;
+    opacity: 1;
+  }
+  i:last-child{
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+  }
+  i:last-child:hover{
+   transform: rotate(-75deg);
+  }
+}
+
+.input-with-icon-close:focus-within {
+  i{
+    top: 12px;
+    color: map_get($colors, primary);
+    transform: scale(1.2);
+    transition: all .2s ease;
+    visibility: hidden;
+    opacity: 0;
+  }
+  i:last-child{
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
 .checkbox-label,.radio-label{
   margin: 10px 0;
   display: flex;

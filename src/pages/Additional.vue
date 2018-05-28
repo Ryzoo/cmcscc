@@ -34,6 +34,10 @@
                 <li><code>m-x-x</code> Dodaje margin na osi x, x (1-5) np. m-x-2</li>
                 <li><code>m-y-x</code> Dodaje margin na osi y, x (1-5) np. m-y-2</li>
             </ul>
+            <h3>Inne</h3>
+            <ul>
+                <li><code>w-100</code> ustawia szerokość na 100% </li>
+            </ul>
         </div>
     </div>
 </template>
