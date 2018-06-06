@@ -583,69 +583,90 @@ i {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.i-user-exchange:before {
+  content: ""; }
+
+.i-user-folder:before {
+  content: ""; }
+
+.i-user-options:before {
+  content: ""; }
+
 .i-mp4:before {
-  content: "\e913"; }
+  content: ""; }
 
 .i-pdf:before {
-  content: "\e914"; }
+  content: ""; }
 
 .i-menu:before {
-  content: "\e911"; }
+  content: ""; }
 
 .i-settings-2:before {
-  content: "\e912"; }
+  content: ""; }
 
 .i-download:before {
-  content: "\e910"; }
+  content: ""; }
 
 .i-form:before {
-  content: "\e901"; }
+  content: ""; }
 
 .i-user:before {
-  content: "\e908"; }
+  content: ""; }
 
 .i-share:before {
-  content: "\e909"; }
+  content: ""; }
 
 .i-settings:before {
-  content: "\e90a"; }
+  content: ""; }
 
 .i-search:before {
-  content: "\e90b"; }
+  content: ""; }
 
 .i-plus:before {
-  content: "\e90c"; }
+  content: ""; }
 
 .i-strategy:before {
-  content: "\e90d"; }
+  content: ""; }
 
 .i-full-screen:before {
-  content: "\e907";
+  content: "";
   color: #6a6e7c; }
 
 .i-multi-users:before {
-  content: "\e90e"; }
+  content: ""; }
 
 .i-empty-set:before {
-  content: "\e905"; }
-
-.i-moon:before {
-  content: "\e90f"; }
+  content: ""; }
 
 .i-cross:before {
-  content: "\e904"; }
+  content: ""; }
 
 .i-compose:before {
-  content: "\e903"; }
+  content: ""; }
 
 .i-eye:before {
-  content: "\e906"; }
+  content: ""; }
 
 .i-calendar:before {
-  content: "\e902"; }
+  content: ""; }
 
 .i-bell:before {
-  content: "\e900"; }
+  content: ""; }
+
+.i-football-field:before {
+  content: ""; }
+
+.i-free-field:before {
+  content: ""; }
+
+.i-sport-thinks:before {
+  content: ""; }
+
+.i-timer:before {
+  content: ""; }
+
+.i-moon:before {
+  content: ""; }
 
 body {
   font-family: Lato, sans-serif;

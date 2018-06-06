@@ -1,26 +1,34 @@
 $icomoon-font-path: "../fonts";
 
-$i-mp4: \e913;
-$i-pdf: \e914;
-$i-menu: \e911;
-$i-settings-2: \e912;
-$i-download: \e910;
-$i-form: \e901;
-$i-user: \e908;
-$i-share: \e909;
-$i-settings: \e90a;
-$i-search: \e90b;
-$i-plus: \e90c;
-$i-strategy: \e90d;
-$i-full-screen: \e907;
-$i-multi-users: \e90e;
-$i-empty-set: \e905;
-$i-moon: \e90f;
-$i-cross: \e904;
-$i-compose: \e903;
-$i-eye: \e906;
-$i-calendar: \e902;
-$i-bell: \e900;
+$i-user-exchange: "\e919";
+$i-user-folder: "\e91a";
+$i-user-options: "\e91b";
+$i-mp4: "\e913";
+$i-pdf: "\e914";
+$i-menu: "\e911";
+$i-settings-2: "\e912";
+$i-download: "\e910";
+$i-form: "\e901";
+$i-user: "\e908";
+$i-share: "\e909";
+$i-settings: "\e90a";
+$i-search: "\e90b";
+$i-plus: "\e90c";
+$i-strategy: "\e90d";
+$i-full-screen: "\e907";
+$i-multi-users: "\e90e";
+$i-empty-set: "\e905";
+$i-cross: "\e904";
+$i-compose: "\e903";
+$i-eye: "\e906";
+$i-calendar: "\e902";
+$i-bell: "\e900";
+$i-football-field: "\e915";
+$i-free-field: "\e916";
+$i-sport-thinks: "\e917";
+$i-timer: "\e918";
+$i-moon: "\e90f";
+
 
 .i-lg {
   font-size: 1.6em;
@@ -67,110 +75,144 @@ i {
 }
 
 
-
+.i-user-exchange {
+  &:before {
+    content: $i-user-exchange;
+  }
+}
+.i-user-folder {
+  &:before {
+    content: $i-user-folder;
+  }
+}
+.i-user-options {
+  &:before {
+    content: $i-user-options;
+  }
+}
 .i-mp4 {
   &:before {
-    content: unicode($i-mp4);
+    content: $i-mp4;
   }
 }
 .i-pdf {
   &:before {
-    content: unicode($i-pdf);
+    content: $i-pdf;
   }
 }
 .i-menu {
   &:before {
-    content: unicode($i-menu);
+    content: $i-menu;
   }
 }
 .i-settings-2 {
   &:before {
-    content: unicode($i-settings-2);
+    content: $i-settings-2;
   }
 }
 .i-download {
   &:before {
-    content: unicode($i-download);
+    content: $i-download;
   }
 }
 .i-form {
   &:before {
-    content: unicode($i-form);
+    content: $i-form;
   }
 }
 .i-user {
   &:before {
-    content: unicode($i-user);
+    content: $i-user;
   }
 }
 .i-share {
   &:before {
-    content: unicode($i-share);
+    content: $i-share;
   }
 }
 .i-settings {
   &:before {
-    content: unicode($i-settings);
+    content: $i-settings;
   }
 }
 .i-search {
   &:before {
-    content: unicode($i-search);
+    content: $i-search;
   }
 }
 .i-plus {
   &:before {
-    content: unicode($i-plus);
+    content: $i-plus;
   }
 }
 .i-strategy {
   &:before {
-    content: unicode($i-strategy);
+    content: $i-strategy;
   }
 }
 .i-full-screen {
   &:before {
-    content: unicode($i-full-screen);
+    content: $i-full-screen;
     color: #6a6e7c;
   }
 }
 .i-multi-users {
   &:before {
-    content: unicode($i-multi-users);
+    content: $i-multi-users;
   }
 }
 .i-empty-set {
   &:before {
-    content: unicode($i-empty-set);
-  }
-}
-.i-moon {
-  &:before {
-    content: unicode($i-moon);
+    content: $i-empty-set;
   }
 }
 .i-cross {
   &:before {
-    content: unicode($i-cross);
+    content: $i-cross;
   }
 }
 .i-compose {
   &:before {
-    content: unicode($i-compose);
+    content: $i-compose;
   }
 }
 .i-eye {
   &:before {
-    content: unicode($i-eye);
+    content: $i-eye;
   }
 }
 .i-calendar {
   &:before {
-    content: unicode($i-calendar);
+    content: $i-calendar;
   }
 }
 .i-bell {
   &:before {
-    content: unicode($i-bell);
+    content: $i-bell;
+  }
+}
+.i-football-field {
+  &:before {
+    content: $i-football-field;
+  }
+}
+.i-free-field {
+  &:before {
+    content: $i-free-field;
+  }
+}
+.i-sport-thinks {
+  &:before {
+    content: $i-sport-thinks;
+  }
+}
+.i-timer {
+  &:before {
+    content: $i-timer;
+  }
+}
+.i-moon {
+  &:before {
+    content: $i-moon;
   }
 }

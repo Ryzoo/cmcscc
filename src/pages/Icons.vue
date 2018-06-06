@@ -41,12 +41,19 @@
                     "i-full-screen",
                     "i-multi-users",
                     "i-empty-set",
-                    "i-moon",
                     "i-cross",
                     "i-compose",
                     "i-eye",
                     "i-calendar",
-                    "i-bell"]
+                    "i-bell",
+                    "i-football-field",
+                    "i-free-field",
+                    "i-sport-thinks",
+                    "i-timer",
+                    "i-moon",
+                "i-user-exchange",
+                "i-user-options",
+                "i-user-folder"]
             }
         },
         computed: {
