@@ -45,6 +45,18 @@
     grid-column-end: span $i;
   }
   @each $res in sm, md, lg {
+    .show-on-#{$res}{
+      display: none;
+      @if $res == sm {
+        @media  (max-width: getMaxResolutionForRes($res)){
+          display:block;
+        }
+      } @else{
+        @media  (min-width: getMinResolutionForRes($res)) and (max-width: getMaxResolutionForRes($res)){
+          display:block;
+        }
+      }
+    }
     .col-#{$res}-#{$i}{
       @if $res == sm {
         @media  (max-width: getMaxResolutionForRes($res)){

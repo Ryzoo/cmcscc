@@ -53,7 +53,8 @@
                     "i-moon",
                 "i-user-exchange",
                 "i-user-options",
-                "i-user-folder"]
+                "i-user-folder",
+                "i-envelope"]
             }
         },
         computed: {

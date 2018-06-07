@@ -28,6 +28,8 @@ $i-free-field: "\e916";
 $i-sport-thinks: "\e917";
 $i-timer: "\e918";
 $i-moon: "\e90f";
+$i-envelope: "\e028";
+
 
 
 .i-lg {
@@ -98,6 +100,11 @@ i {
 .i-pdf {
   &:before {
     content: $i-pdf;
+  }
+}
+.i-envelope {
+  &:before {
+    content: $i-envelope;
   }
 }
 .i-menu {

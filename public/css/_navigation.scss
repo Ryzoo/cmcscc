@@ -105,6 +105,18 @@ nav .left-nav-menu{
 nav .right-nav-menu{
   position: absolute;
   right: 0;
+
+  &::after{
+    content: '';
+    height: 65px;
+    position: absolute;
+    right: 0;
+    background: map_get($colors,second-d);
+    margin-right: -100px;
+    width: 100px;
+    top: 0;
+  }
+
   @media(max-width: 991px){
     position: absolute;
     display: block;

@@ -8,6 +8,8 @@ $(function(){
     window.jsFrameworkAfterChangeRoute = ()=>{
         if($(window).width() < 991){ $("nav .burger, nav .right-burger").show();}
         else{ $("nav .burger, nav .right-burger").hide(); }
+
+        tables();
     }
 });
 
@@ -192,6 +194,8 @@ function tables() {
         iconList.addClass('active');
         iconList.css("height", $(this).parent().parent().height());
         iconList.css("left", $(this).parent().parent().offset().left+"px");
+        iconList.css("left", "0");
+        iconList.css("top", $(this).parent().parent().top+"px");
         iconList.css("width", $(this).parent().parent().width()+"px");
         const hasDiv = $(this).parent().parent().find('> div').length;
         if (self.isMobile && !hasDiv) {
