@@ -31,6 +31,11 @@
                         <label class="checkbox-label">
                             <input type="checkbox"> Potwierdzam 100%
                         </label>
+                        <label >Range</label>
+                        <div class="w-100 range-with-label">
+                            <input type="range" placeholder="Obciążenie" />
+                            <span>100</span>
+                        </div>
                         <label >Radio</label>
                         <label class="radio-label"><input type="radio" name="food"> Frytki</label>
                         <label class="radio-label"><input type="radio" name="food"> Ziemniaki</label>

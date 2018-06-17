@@ -26,7 +26,7 @@
                 To jest bardzo fajny modal
             </div>
             <div class="modal-body">
-                <form class="form-darkner">
+                <form >
                     <label> Imię</label>
                     <input type="text" placeholder="Podaj swoje imię "/>
                 </form>

@@ -22,18 +22,19 @@
   line-height: 1em;
   font-size: 1em;
   letter-spacing: .5px;
-  background: map_get($colors,second-d);
-  color: map_get($colors,third);
+  background: map_get($colors,third);
 }
 
 .modal-body{
+  margin-top: -1px;
   padding: 10px 10px 10px;
-  background: map_get($colors,third-l);
+  background: map_get($colors,third);
 }
 
 .modal-action{
-  padding: 0 10px 10px;
-  background: map_get($colors,third-l);
+  margin-top: -1px;
+  padding: 10px;
+  background: map_get($colors,third);
 }
 
 .modal-action button{
