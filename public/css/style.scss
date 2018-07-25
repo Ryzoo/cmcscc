@@ -66,3 +66,15 @@ body{
 
 /* Table options end */
 @import "table";
+
+// additional global style
+.circle-profile{
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  object-position: center;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+}
